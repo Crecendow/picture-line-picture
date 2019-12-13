@@ -41,10 +41,10 @@ function initSquareSet() {
                 } else {
                     chooseTwo = this;
                     if (chooseOne != chooseTwo && chooseOne.num == chooseTwo.num ) { //判断第一次和第二次点击不是同一个 并且num值相等  以及是否在路径上可以消除
-                        alert(chooseOne.row);
+/*                        alert(chooseOne.row);
                         alert(chooseOne.col);
                         alert(chooseTwo.row);
-                        alert(chooseTwo.col);
+                        alert(chooseTwo.col);*/
                         clearSquare(chooseOne.row, chooseOne.col);
                         clearSquare(chooseTwo.row, chooseTwo.col);
                     }
@@ -101,4 +101,8 @@ function render() {
 function clearSquare(x, y) {
     wrap.removeChild(squareSet[x][y]); // 删除方块
     squareSet[x][y] = null;
+
+    if(wrap == null){
+        alert("陈炜玮是猪");
+    }
 }
