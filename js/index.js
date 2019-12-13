@@ -1,6 +1,6 @@
 var wrap = document.getElementsByClassName('wrapper')[0];
-var rows = 6;   // 创建连连看行数
-var cols = 7;  // 创建连连看列数
+var rows = 5;   // 创建连连看行数
+var cols = 6;  // 创建连连看列数
 var type = 24   //选择多少种图片，0-24都可以  看自己心情 数字大种类多  数字小种类少游戏难度更简单
 var squareSet = [];    // 生成小方块的数组
 var chooseOne = null; //
