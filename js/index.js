@@ -1,6 +1,6 @@
 var wrap = document.getElementsByClassName('wrapper')[0];
-var rows = 7;   // 创建连连看行数
-var cols = 12;  // 创建连连看列数
+var rows = 6;   // 创建连连看行数
+var cols = 9;  // 创建连连看列数
 var type = 24   //选择多少种图片，0-24都可以  看自己心情 数字大种类多  数字小种类少游戏难度更简单
 var squareSet = [];    // 生成小方块的数组
 var chooseOne = null; //
@@ -52,6 +52,11 @@ function initSquareSet() {
                     chooseTwo = null;
                 }
                 render(); // 点击方块变换样式
+
+
+                if(wrap.childNodes.length == 0){
+                    alert("陈炜玮是猪");
+                }
             }
         }
     }
@@ -101,8 +106,4 @@ function render() {
 function clearSquare(x, y) {
     wrap.removeChild(squareSet[x][y]); // 删除方块
     squareSet[x][y] = null;
-
-    if(wrap == null){
-        alert("陈炜玮是猪");
-    }
 }
