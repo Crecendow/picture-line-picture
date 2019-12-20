@@ -1,6 +1,6 @@
 var wrap = document.getElementsByClassName('wrapper')[0];
-var rows = 5;   // 创建连连看行数
-var cols = 6;  // 创建连连看列数
+var rows = 7;   // 创建连连看行数
+var cols = 8;  // 创建连连看列数
 var type = 24   //选择多少种图片，0-24都可以  看自己心情 数字大种类多  数字小种类少游戏难度更简单
 var squareSet = [];    // 生成小方块的数组
 var chooseOne = null; //
@@ -55,7 +55,7 @@ function initSquareSet() {
 
 
                 if(wrap.childNodes.length == 0){
-                    alert("陈炜玮是猪");
+                    alert("我我我我我，玩完了麻烦告诉我一声");
                 }
             }
         }
